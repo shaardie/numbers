@@ -17,12 +17,6 @@ func TestNaturalNumbers(t *testing.T) {
 		t.Errorf("Integer in set")
 	}
 
-	if in, err := NatualNumbers.Contains("0"); err != nil {
-		t.Fatal(err)
-	} else if !in {
-		t.Errorf("'0' not in set")
-	}
-
 	if in, err := NatualNumbers.Contains("00"); err != nil {
 		t.Fatal(err)
 	} else if !in {
